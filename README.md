@@ -12,7 +12,7 @@ O design foi feito através de um template base criado no Figma, onde foi transf
 
 ![Agular Decoder Preview](https://i.imgur.com/zrnSYYx.png)
 
-Live: https://...
+Live: https://angular-decoder.vercel.app/
 
 
 ## Pré-requisitos
