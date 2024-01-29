@@ -1,0 +1,57 @@
+.logo-container {
+  width: calc(100% - 80px); /* Ajusta a largura para a margem */
+  position: relative;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  box-sizing: border-box; /* Inclui margens e paddings na largura */
+}
+
+.logo-image {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media Queries para .logo-container */
+@media (max-width: 900px) {
+  .logo-container {
+    width: calc(100% - 60px); /* Ajusta a largura considerando a margem de 30px */
+    margin-top: 40px; /* Ajusta o topo conforme necessário */
+  }
+}
+
+@media (max-width: 680px) {
+  .logo-container {
+    width: calc(100% - 60px);
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .logo-container {
+    width: calc(100% - 60px);
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 550px) {
+  .logo-container {
+    width: calc(100% - 60px);
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-container {
+    width: calc(100% - 40px); /* Diminui as margens laterais */
+    margin-top: 40px; /* Diminui o espaço no topo */
+  }
+}
+
+@media (max-width: 415px) {
+  .logo-container {
+    width: calc(100% - 40px);
+    margin-top: 40px;
+  }
+}

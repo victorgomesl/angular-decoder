@@ -1,0 +1,5 @@
+<div class="digitar-texto-container">
+  <textarea class="input-texto" [(ngModel)]="textoDigitado" placeholder="Digite seu texto"></textarea>
+  <div *ngIf="erro" class="erro">{{ erro }}</div>
+  <div *ngIf="textoProcessadoMensagem" class="mensagem-processado">{{ textoProcessadoMensagem }}</div>
+</div>

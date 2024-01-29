@@ -1,0 +1,28 @@
+/* Importação de fontes e reset do CSS */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+html {
+    height: 100%;
+    box-sizing: border-box; /* Garante que o padding não afete o tamanho total */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit; /* Herda box-sizing do html */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    min-height: 100vh; /* Mínimo de altura é a altura da tela */
+    font-family: 'Inter', sans-serif;
+    background-color: #F3F5FC;
+}
+
+.main-container {
+    flex: 1; /* Faz com que o main-container ocupe o espaço disponível */
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ocupa a largura total */
+}

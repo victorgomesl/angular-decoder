@@ -1,0 +1,19 @@
+<div class="conteudo-acao">
+  <div *ngIf="exibirMensagemProcessado" class="mensagem-processado">
+    Este texto já foi criptografado ou descriptografado.
+  </div>
+  <div class="texto-informativo">
+    <div class="icone-informativo">
+      <img src="../../../assets/bi_exclamation-circle-fill.svg" alt="Informação">
+    </div>
+    Apenas letras minúsculas e sem acento.
+  </div>
+  <div class="botoes-acao">
+    <button class="botao criptografar" (click)="criptografarTexto()" [disabled]="textoProcessado">
+      Criptografar
+    </button>
+    <button class="botao descriptografar" (click)="descriptografarTexto()" [disabled]="textoProcessado">
+      Descriptografar
+    </button>
+  </div>
+</div>

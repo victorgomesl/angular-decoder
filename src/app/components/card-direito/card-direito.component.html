@@ -1,0 +1,16 @@
+<div class="card-direito">
+  <div *ngIf="mostrarTexto; else mensagemPadrao" class="card-direito-content">
+    <div *ngIf="textoCriptografado" class="message-up">{{ mensagemEstadoTexto }}</div>
+    <div class="texto-criptografado">{{ textoCriptografado }}</div>
+    <button class="botao copiar" (click)="copiarTexto()">
+      Copiar <span class="material-icons">content_copy</span>
+    </button>
+  </div>
+  <ng-template #mensagemPadrao>
+    <div class="card-direito-content">
+      <img src="../../../assets/search-img.svg" class="search-image">
+      <div class="message-not-found">Nenhuma mensagem encontrada</div>
+      <div class="instruction-text">Digite um texto que você deseja criptografar ou descriptografar e clique no botão correspondente.</div>
+    </div>
+  </ng-template>
+</div>
